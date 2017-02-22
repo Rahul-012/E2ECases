@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" >
+    <test name="LIL suite 1" >
+    <classes>
+      <class name="testcase.Login_Action"/>
+     <class name="testcase.No_of_ProjectTestNG"/>
+    </classes>
+    </test>
+  </suite>  
