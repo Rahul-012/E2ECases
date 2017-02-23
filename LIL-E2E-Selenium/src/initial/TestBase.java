@@ -1,5 +1,7 @@
 package initial;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,6 +12,8 @@ public class TestBase {
 	public static WebDriver driver=null;
 	public static String url=null;
 	public static String browser=null;
+	public static Logger logger=null;
+	
 	
 	public static void launchBrowser()
 	{
@@ -28,8 +32,12 @@ public class TestBase {
 			break;
 		case "Chrome":
 			System.setProperty("webdriver.chrome.driver", "F:\\name\\chromedriver.exe");
-    	    driver=new ChromeDriver();
+			logger=Logger.getLogger("SampleEntry");
+			PropertyConfigurator.configure("log4j.properties");
+			
+			driver=new ChromeDriver();
 			System.out.println("Chrome Launched Successfully!!!!!");
+			logger.info("Chrome Launched Successfully");
 			break;
 			
 		default:

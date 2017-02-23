@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="example suite 1" duration-ms="64654" started-at="2017-02-23T14:24:07Z" finished-at="2017-02-23T14:25:12Z">
+  <suite name="example suite 1" duration-ms="104833" started-at="2017-02-23T18:47:34Z" finished-at="2017-02-23T18:49:19Z">
     <groups>
     </groups>
-    <test name="LIL suite 1" duration-ms="64654" started-at="2017-02-23T14:24:07Z" finished-at="2017-02-23T14:25:12Z">
+    <test name="LIL suite 1" duration-ms="104833" started-at="2017-02-23T18:47:34Z" finished-at="2017-02-23T18:49:19Z">
       <class name="testcase.Login_Action">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.Login_Action@6a2bcfcb]" name="beforeClass" is-config="true" duration-ms="33421" started-at="2017-02-23T19:54:07Z" finished-at="2017-02-23T19:54:40Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.Login_Action@2f32ff]" name="beforeClass" is-config="true" duration-ms="67543" started-at="2017-02-23T10:47:34Z" finished-at="2017-02-23T10:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="modal_open()[pri:1, instance:testcase.Login_Action@6a2bcfcb]" name="modal_open" duration-ms="402" started-at="2017-02-23T19:54:40Z" finished-at="2017-02-23T19:54:41Z">
+        <test-method status="PASS" signature="modal_open()[pri:1, instance:testcase.Login_Action@2f32ff]" name="modal_open" duration-ms="819" started-at="2017-02-23T10:48:42Z" finished-at="2017-02-23T10:48:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modal_open -->
-        <test-method status="PASS" signature="enterCredentials(java.lang.String, java.lang.String)[pri:2, instance:testcase.Login_Action@6a2bcfcb]" name="enterCredentials" duration-ms="10932" started-at="2017-02-23T19:54:42Z" data-provider="credentials" finished-at="2017-02-23T19:54:53Z">
+        <test-method status="PASS" signature="enterCredentials(java.lang.String, java.lang.String)[pri:2, instance:testcase.Login_Action@2f32ff]" name="enterCredentials" duration-ms="11758" started-at="2017-02-23T10:48:45Z" data-provider="credentials" finished-at="2017-02-23T10:48:56Z">
           <params>
             <param index="0">
               <value>
@@ -31,27 +31,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCredentials -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.Login_Action@6a2bcfcb]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-02-23T19:54:53Z" finished-at="2017-02-23T19:54:53Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.Login_Action@2f32ff]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-02-23T10:48:56Z" finished-at="2017-02-23T10:48:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testcase.Login_Action -->
       <class name="testcase.No_of_ProjectTestNG">
-        <test-method status="PASS" signature="clickUponProjectTab()[pri:1, instance:testcase.No_of_ProjectTestNG@4de8b406]" name="clickUponProjectTab" duration-ms="3143" started-at="2017-02-23T19:54:53Z" finished-at="2017-02-23T19:54:56Z">
+        <test-method status="PASS" signature="clickUponProjectTab()[pri:1, instance:testcase.No_of_ProjectTestNG@13f2bb1]" name="clickUponProjectTab" duration-ms="5182" started-at="2017-02-23T10:48:56Z" finished-at="2017-02-23T10:49:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickUponProjectTab -->
       </class> <!-- testcase.No_of_ProjectTestNG -->
       <class name="testcase.CreateNewProjectTestNG">
-        <test-method status="PASS" signature="clickOnProjWizard()[pri:1, instance:testcase.CreateNewProjectTestNG@3c756e4d]" name="clickOnProjWizard" duration-ms="6392" started-at="2017-02-23T19:54:56Z" finished-at="2017-02-23T19:55:02Z">
+        <test-method status="PASS" signature="clickOnProjWizard()[pri:1, instance:testcase.CreateNewProjectTestNG@e9a829]" name="clickOnProjWizard" duration-ms="6593" started-at="2017-02-23T10:49:02Z" finished-at="2017-02-23T10:49:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnProjWizard -->
-        <test-method status="PASS" signature="projectWizardAppear()[pri:2, instance:testcase.CreateNewProjectTestNG@3c756e4d]" name="projectWizardAppear" duration-ms="3071" started-at="2017-02-23T19:55:02Z" finished-at="2017-02-23T19:55:05Z">
+        <test-method status="PASS" signature="projectWizardAppear()[pri:2, instance:testcase.CreateNewProjectTestNG@e9a829]" name="projectWizardAppear" duration-ms="3138" started-at="2017-02-23T10:49:08Z" finished-at="2017-02-23T10:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- projectWizardAppear -->
-        <test-method status="PASS" signature="metaInformation()[pri:3, instance:testcase.CreateNewProjectTestNG@3c756e4d]" name="metaInformation" duration-ms="6104" started-at="2017-02-23T19:55:05Z" finished-at="2017-02-23T19:55:12Z">
+        <test-method status="PASS" signature="metaInformation()[pri:3, instance:testcase.CreateNewProjectTestNG@e9a829]" name="metaInformation" duration-ms="7558" started-at="2017-02-23T10:49:11Z" finished-at="2017-02-23T10:49:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- metaInformation -->
