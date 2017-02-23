@@ -19,14 +19,14 @@ public class No_of_ProjectTestNG {
 	  
   }
   
-  @Test(priority=2)
+/*  @Test(priority=2)
   public void projectShouldVisible()
   {
 	  No_ofProject.projectVisible();
 	  
-  }
+  }*/
   
-  @Test(priority=3)
+  /*@Test(priority=3)
   public void closeBrowser()
   {
 	  TestBase.closeBrowser();
@@ -36,7 +36,7 @@ public class No_of_ProjectTestNG {
   public void close()
   {
 	  TestBase.closeBrowser();
-  }
+  }*/
   
 
 }
