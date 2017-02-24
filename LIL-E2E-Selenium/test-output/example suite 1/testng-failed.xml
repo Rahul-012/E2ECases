@@ -9,11 +9,13 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- testcase.Login_Action -->
-      <class name="testcase.No_of_ProjectTestNG">
+      <class name="testcase.CreateNewProjectTestNG">
         <methods>
-          <include name="projectShould_isible"/>
+          <include name="clickOnProjWizard"/>
+          <include name="metaInformation"/>
+          <include name="projectWizardAppear"/>
         </methods>
-      </class> <!-- testcase.No_of_ProjectTestNG -->
+      </class> <!-- testcase.CreateNewProjectTestNG -->
     </classes>
   </test> <!-- LIL suite 1(failed) -->
 </suite> <!-- Failed suite [example suite 1] -->
