@@ -25,7 +25,11 @@ public class CreateNewProjectTestNG extends TestBase {
  {
 	 CreateNewProject.meataInforPrjWizard();
  }
- 
+ @Test(priority=4)
+ public void uploadProjectThumbnail() throws Exception
+ {
+	 CreateNewProject.projectThumbnail();
+ }
  @AfterClass
  public void close()
  {

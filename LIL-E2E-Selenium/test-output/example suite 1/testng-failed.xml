@@ -3,19 +3,17 @@
 <suite name="Failed suite [example suite 1]">
   <test name="LIL suite 1(failed)">
     <classes>
+      <class name="testcase.CreateNewProjectTestNG">
+        <methods>
+          <include name="uploadProjectThumbnail"/>
+        </methods>
+      </class> <!-- testcase.CreateNewProjectTestNG -->
       <class name="testcase.Login_Action">
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- testcase.Login_Action -->
-      <class name="testcase.CreateNewProjectTestNG">
-        <methods>
-          <include name="clickOnProjWizard"/>
-          <include name="metaInformation"/>
-          <include name="projectWizardAppear"/>
-        </methods>
-      </class> <!-- testcase.CreateNewProjectTestNG -->
     </classes>
   </test> <!-- LIL suite 1(failed) -->
 </suite> <!-- Failed suite [example suite 1] -->

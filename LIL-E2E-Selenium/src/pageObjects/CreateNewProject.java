@@ -3,6 +3,8 @@ package pageObjects;
 
 
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -91,7 +93,7 @@ public class CreateNewProject extends TestBase {
 				 String actualLanguage=driver.findElement(By.className("show")).getText();
 				  String expectLanguage="please select language";
 				  Assert.assertEquals(actualLanguage, expectLanguage);
-		   
+		          Thread.sleep(3000);
 		   
 		 //select Language
 		   Select language=new Select(driver.findElement(By.name("lang")));
@@ -103,11 +105,12 @@ public class CreateNewProject extends TestBase {
 				 String actualExpertise=driver.findElement(By.className("show")).getText();
 				  String expectExpertise="please select expertiseLevel";
 				  Assert.assertEquals(actualExpertise, expectExpertise);
-		   
+		         Thread.sleep(3000);
 		   
 		  //Select Expertise Level
-		    Select expertise=new Select(driver.findElement(By.cssSelector("body > div.modal.fade.ng-scope.ng-isolate-scope.in > div > div > form > div.modal-body > div > div:nth-child(1) > div:nth-child(5) > select")));
-		    expertise.selectByIndex(1);
+		 //   Select expertise=new Select(driver.findElement(By.cssSelector("body > div.modal.fade.ng-scope.ng-isolate-scope.in > div > div > form > div.modal-body > div > div:nth-child(1) > div:nth-child(5) > select")));
+	         Select expertise=new Select(driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div[2]/div/div[1]/div[5]/select")));
+		         expertise.selectByIndex(1);
 		   
 		    //click on Done Button
 			  driver.findElement(By.name("button")).click();
@@ -139,10 +142,51 @@ public class CreateNewProject extends TestBase {
 		     //select Topic   
 		        Select topic=new Select(driver.findElement(By.cssSelector("body > div.modal.fade.ng-scope.ng-isolate-scope.in > div > div > form > div.modal-body > div > div:nth-child(1) > div:nth-child(8) > select")));
 		      topic.selectByVisibleText("Coal Handling");
+		     
 
 		
 		
 		
+	}
+	
+	public static void projectThumbnail() throws IOException, InterruptedException
+	{
+		 Thread.sleep(9000);
+		//upload docfile
+		driver.findElement(By.className("fa-upload")).click();
+		Thread.sleep(2000);
+		Runtime.getRuntime().exec("F:\\AutoIT\\docFIileUload.exe");
+		Thread.sleep(2000);
+	String actualDocerror=	driver.findElement(By.className("show")).getText();
+	String expectedDocError="Selected resource type is not valid, only images are allowed.";
+	Assert.assertEquals(actualDocerror, expectedDocError);
+	Thread.sleep(2000);
+	//upload mp3file
+			driver.findElement(By.className("file-upload-btn")).click();
+			Thread.sleep(2000);
+			Runtime.getRuntime().exec("F:\\AutoIT\\mp3Fileupload.exe");
+		String actualMp3error=	driver.findElement(By.className("show")).getText();
+		String expectedMp3Error="Selected resource type is not valid, only images are allowed.";
+		Assert.assertEquals(actualMp3error, expectedMp3Error);
+		
+		//upload PDFFile
+		driver.findElement(By.className("file-upload-btn")).click();
+		Thread.sleep(2000);
+		Runtime.getRuntime().exec("F:\\AutoIT\\mp3Fileupload.exe");
+	String actualPdfError=	driver.findElement(By.className("show")).getText();
+	String expectedPdfError="Selected resource type is not valid, only images are allowed.";
+	Assert.assertEquals(actualPdfError, expectedPdfError);
+	
+	//upload TextFile
+			driver.findElement(By.className("file-upload-btn")).click();
+			Thread.sleep(2000);
+			Runtime.getRuntime().exec("F:\\AutoIT\\mp3Fileupload.exe");
+		String actualTextError=	driver.findElement(By.className("show")).getText();
+		String expectedTextError="Selected resource type is not valid, only images are allowed.";
+		Assert.assertEquals(actualTextError, expectedTextError);
+	
+	
+	
 	}
 	
 }
