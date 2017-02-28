@@ -5,7 +5,7 @@
     <classes>
       <class name="testcase.AddResourceTestNG">
         <methods>
-          <include name="googleSearch"/>
+          <include name="dragnDropGoogleElement"/>
         </methods>
       </class> <!-- testcase.AddResourceTestNG -->
       <class name="testcase.Login_Action">
