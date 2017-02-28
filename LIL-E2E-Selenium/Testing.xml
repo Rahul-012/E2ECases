@@ -3,8 +3,9 @@
     <test name="LIL suite 1" >
     <classes>
       <class name="testcase.Login_Action"/>
-     <class name="testcase.No_of_ProjectTestNG"/>
-     <class name="testcase.CreateNewProjectTestNG"/>
+      <class name="testcase.No_of_ProjectTestNG"/>
+      <class name="testcase.AddResourceTestNG"/>
+  
     </classes>
     </test>
   </suite>  

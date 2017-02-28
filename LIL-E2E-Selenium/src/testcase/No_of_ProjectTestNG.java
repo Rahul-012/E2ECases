@@ -19,12 +19,12 @@ public class No_of_ProjectTestNG {
 	  
   }
   
-/*  @Test(priority=2)
-  public void projectShouldVisible()
+  @Test(priority=2)
+  public void openProject() throws InterruptedException
   {
-	  No_ofProject.projectVisible();
+	  No_ofProject.openProject();
 	  
-  }*/
+  }
   
   /*@Test(priority=3)
   public void closeBrowser()
