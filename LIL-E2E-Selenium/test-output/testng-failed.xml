@@ -3,11 +3,11 @@
 <suite name="Failed suite [example suite 1]">
   <test name="LIL suite 1(failed)">
     <classes>
-      <class name="testcase.CreateNewProjectTestNG">
+      <class name="testcase.AddResourceTestNG">
         <methods>
-          <include name="uploadProjectThumbnail"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- testcase.CreateNewProjectTestNG -->
+      </class> <!-- testcase.AddResourceTestNG -->
       <class name="testcase.Login_Action">
         <methods>
           <include name="beforeClass"/>

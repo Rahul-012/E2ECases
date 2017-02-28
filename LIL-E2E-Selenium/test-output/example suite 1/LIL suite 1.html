@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LIL suite 1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 24 11:29:46 PST 2017</td>
+<td>Started on:</td><td>Tue Feb 28 16:33:46 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>90 seconds (90560 ms)</td>
+<tr><td>Total time:</td><td>144 seconds (144355 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,39 +75,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.CreateNewProjectTestNG.uploadProjectThumbnail()'><b>uploadProjectThumbnail</b><br>Test class: testcase.CreateNewProjectTestNG</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;show&quot;}
+<td title='testcase.AddResourceTestNG.googleSearch()'><b>googleSearch</b><br>Test class: testcase.AddResourceTestNG</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 84 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;Rahul&apos;, ip: &apos;192.168.225.196&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+System info: host: &apos;Rahul&apos;, ip: &apos;192.168.230.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\RAHUL-~1\AppData\Local\Temp\scoped_dir3616_5882}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e35db9df0bb86e097d807c3ca7e80e8
-*** Element info: {Using=class name, value=show}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\MOINKH~1\AppData\Local\Temp\scoped_dir6992_26372}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9dc11efc0c870409fa81f42e360bf36e
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at pageObjects.CreateNewProject.projectThumbnail(CreateNewProject.java:184)
-	at testcase.CreateNewProjectTestNG.uploadProjectThumbnail(CreateNewProjectTestNG.java:31)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2888581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2888581'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;show&quot;}
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at pageObjects.AddResources.googleSearch(AddResources.java:24)
+	at testcase.AddResourceTestNG.googleSearch(AddResourceTestNG.java:13)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530696881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530696881'><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 84 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
-System info: host: &apos;Rahul&apos;, ip: &apos;192.168.225.196&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+System info: host: &apos;Rahul&apos;, ip: &apos;192.168.230.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\RAHUL-~1\AppData\Local\Temp\scoped_dir3616_5882}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1e35db9df0bb86e097d807c3ca7e80e8
-*** Element info: {Using=class name, value=show}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\MOINKH~1\AppData\Local\Temp\scoped_dir6992_26372}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9dc11efc0c870409fa81f42e360bf36e
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -115,12 +109,10 @@ Session ID: 1e35db9df0bb86e097d807c3ca7e80e8
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at pageObjects.CreateNewProject.projectThumbnail(CreateNewProject.java:184)
-	at testcase.CreateNewProjectTestNG.uploadProjectThumbnail(CreateNewProjectTestNG.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at pageObjects.AddResources.googleSearch(AddResources.java:24)
+	at testcase.AddResourceTestNG.googleSearch(AddResourceTestNG.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -142,12 +134,12 @@ Session ID: 1e35db9df0bb86e097d807c3ca7e80e8
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
 	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 </pre></div></td>
-<td>22</td>
-<td>testcase.CreateNewProjectTestNG@e9a829</td></tr>
+<td>3</td>
+<td>testcase.AddResourceTestNG@6a024a67</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -157,35 +149,30 @@ Session ID: 1e35db9df0bb86e097d807c3ca7e80e8
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.CreateNewProjectTestNG.clickOnProjWizard()'><b>clickOnProjWizard</b><br>Test class: testcase.CreateNewProjectTestNG</td>
+<td title='testcase.AddResourceTestNG.callClass()'><b>callClass</b><br>Test class: testcase.AddResourceTestNG</td>
 <td></td>
-<td>6</td>
-<td>testcase.CreateNewProjectTestNG@e9a829</td></tr>
+<td>0</td>
+<td>testcase.AddResourceTestNG@6a024a67</td></tr>
 <tr>
 <td title='testcase.No_of_ProjectTestNG.clickUponProjectTab()'><b>clickUponProjectTab</b><br>Test class: testcase.No_of_ProjectTestNG</td>
 <td></td>
 <td>3</td>
-<td>testcase.No_of_ProjectTestNG@13f2bb1</td></tr>
+<td>testcase.No_of_ProjectTestNG@6ea12c19</td></tr>
 <tr>
 <td title='testcase.Login_Action.enterCredentials()'><b>enterCredentials</b><br>Test class: testcase.Login_Action<br>Parameters: rahulrathore010@gmail.com, rahul</td>
 <td></td>
-<td>11</td>
-<td>testcase.Login_Action@2f32ff</td></tr>
-<tr>
-<td title='testcase.CreateNewProjectTestNG.metaInformation()'><b>metaInformation</b><br>Test class: testcase.CreateNewProjectTestNG</td>
-<td></td>
-<td>13</td>
-<td>testcase.CreateNewProjectTestNG@e9a829</td></tr>
+<td>10</td>
+<td>testcase.Login_Action@5afa04c</td></tr>
 <tr>
 <td title='testcase.Login_Action.modal_open()'><b>modal_open</b><br>Test class: testcase.Login_Action</td>
 <td></td>
 <td>0</td>
-<td>testcase.Login_Action@2f32ff</td></tr>
+<td>testcase.Login_Action@5afa04c</td></tr>
 <tr>
-<td title='testcase.CreateNewProjectTestNG.projectWizardAppear()'><b>projectWizardAppear</b><br>Test class: testcase.CreateNewProjectTestNG</td>
+<td title='testcase.No_of_ProjectTestNG.openProject()'><b>openProject</b><br>Test class: testcase.No_of_ProjectTestNG</td>
 <td></td>
 <td>3</td>
-<td>testcase.CreateNewProjectTestNG@e9a829</td></tr>
+<td>testcase.No_of_ProjectTestNG@6ea12c19</td></tr>
 </table><p>
 </body>
 </html>

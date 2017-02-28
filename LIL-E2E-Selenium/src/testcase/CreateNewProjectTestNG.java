@@ -1,5 +1,7 @@
 package testcase;
 
+import java.io.IOException;
+
 import org.junit.AfterClass;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -30,6 +32,17 @@ public class CreateNewProjectTestNG extends TestBase {
  {
 	 CreateNewProject.projectThumbnail();
  }
+ @Test(priority=5)
+ public void countProjectCreation() throws IOException, InterruptedException
+ {
+	 CreateNewProject.projectCreatedSuccesfuly();
+ }
+ @Test(priority=6)
+ public void openCreatedProject() throws IOException, InterruptedException
+ {
+	 CreateNewProject.openProjectAddResources();
+ }
+ 
  @AfterClass
  public void close()
  {
