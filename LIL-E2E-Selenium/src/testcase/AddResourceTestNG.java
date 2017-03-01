@@ -19,4 +19,10 @@ public class AddResourceTestNG {
   {
 	  addresources=new AddResources();
   }
+  
+  @Test(priority=3)
+  public void dragnDropGoogleElement() throws InterruptedException
+  {
+	  addresources.dragNDropGoogleSrch();
+  }
 }
