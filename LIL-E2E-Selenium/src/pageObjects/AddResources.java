@@ -50,6 +50,18 @@ public class AddResources extends TestBase implements Workspace {
 		 
 		
 	}
+
+	@Override
+	public void addImages() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addURL() {
+		// TODO Auto-generated method stub
+		
+	}
 	
              
 }
