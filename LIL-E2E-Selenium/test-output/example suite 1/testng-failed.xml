@@ -3,15 +3,17 @@
 <suite name="Failed suite [example suite 1]">
   <test name="LIL suite 1(failed)">
     <classes>
-      <class name="testcase.AddResourceTestNG">
+      <class name="testcase.No_of_ProjectTestNG">
         <methods>
-          <include name="dragnDropGoogleElement"/>
+          <include name="openProject"/>
+          <include name="clickUponProjectTab"/>
         </methods>
-      </class> <!-- testcase.AddResourceTestNG -->
+      </class> <!-- testcase.No_of_ProjectTestNG -->
       <class name="testcase.Login_Action">
         <methods>
+          <include name="modal_open"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="enterCredentials"/>
         </methods>
       </class> <!-- testcase.Login_Action -->
     </classes>
