@@ -6,14 +6,12 @@
       <class name="testcase.No_of_ProjectTestNG">
         <methods>
           <include name="openProject"/>
-          <include name="clickUponProjectTab"/>
         </methods>
       </class> <!-- testcase.No_of_ProjectTestNG -->
       <class name="testcase.Login_Action">
         <methods>
-          <include name="modal_open"/>
           <include name="beforeClass"/>
-          <include name="enterCredentials"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- testcase.Login_Action -->
     </classes>

@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +106,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="testcase.DigitalBookWizardTestNG" hash-for-method="digitalBookWizrdOpen">digitalBookWizrdOpen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="testcase.Login_Action" hash-for-method="enterCredentials(rahulrathore010@gmail.com, rahul)">enterCredentials(rahulrathore010@gmail.com, rahul)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="testcase.DigitalBookWizardTestNG" hash-for-method="listOfWizards">listOfWizards</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,6 +166,28 @@
           <div class="suite-example_suite_1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testcase.DigitalBookWizardTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="digitalBookWizrdOpen">
+                  </a> <!-- digitalBookWizrdOpen -->
+                  <span class="method-name">digitalBookWizrdOpen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listOfWizards">
+                  </a> <!-- listOfWizards -->
+                  <span class="method-name">listOfWizards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-passed -->
+          <div class="suite-example_suite_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testcase.Login_Action</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -190,6 +222,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testcase.Login_Action&quot;/&gt;
       &lt;class name=&quot;testcase.No_of_ProjectTestNG&quot;/&gt;
+      &lt;class name=&quot;testcase.DigitalBookWizardTestNG&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LIL suite 1 --&gt;
 &lt;/suite&gt; &lt;!-- example suite 1 --&gt;
@@ -203,7 +236,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LIL suite 1 (2 classes)</span>
+                <span class="test-name">LIL suite 1 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,28 +262,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'enterCredentials')
 data.setCell(0, 2, 'testcase.Login_Action')
-data.setCell(0, 3, 10925);
+data.setCell(0, 3, 11082);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'clickUponProjectTab')
 data.setCell(1, 2, 'testcase.No_of_ProjectTestNG')
-data.setCell(1, 3, 4168);
+data.setCell(1, 3, 3949);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'openProject')
 data.setCell(2, 2, 'testcase.No_of_ProjectTestNG')
-data.setCell(2, 3, 3527);
+data.setCell(2, 3, 3675);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'modal_open')
-data.setCell(3, 2, 'testcase.Login_Action')
-data.setCell(3, 3, 618);
+data.setCell(3, 1, 'listOfWizards')
+data.setCell(3, 2, 'testcase.DigitalBookWizardTestNG')
+data.setCell(3, 3, 3116);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'modal_open')
+data.setCell(4, 2, 'testcase.Login_Action')
+data.setCell(4, 3, 636);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'digitalBookWizrdOpen')
+data.setCell(5, 2, 'testcase.DigitalBookWizardTestNG')
+data.setCell(5, 3, 490);
 window.suiteTableData['example_suite_1']= { tableData: data, tableDiv: 'times-div-example_suite_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-example_suite_1">
               </div> <!-- times-div-example_suite_1 -->
             </div> <!-- times-div -->
@@ -283,26 +324,37 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">modal_open</span>
-                <span class="method-start">79314 ms</span>
+                <span class="method-start">36663 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterCredentials(rahulrathore010@gmail.com, rahul)</span>
-                <span class="method-start">81142 ms</span>
+                <span class="method-start">39487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">92070 ms</span>
+                <span class="method-start">50575 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.No_of_ProjectTestNG</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">clickUponProjectTab</span>
-                <span class="method-start">92074 ms</span>
+                <span class="method-start">50582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openProject</span>
-                <span class="method-start">96245 ms</span>
+                <span class="method-start">54534 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.DigitalBookWizardTestNG</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">listOfWizards</span>
+                <span class="method-start">58213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">digitalBookWizrdOpen</span>
+                <span class="method-start">61335 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
