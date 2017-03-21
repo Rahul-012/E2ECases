@@ -4,7 +4,7 @@
     <classes>
       <class name="testcase.Login_Action"/>
       <class name="testcase.No_of_ProjectTestNG"/>
-    
+      <class name="testcase.DigitalBookWizardTestNG"/>  
   
     </classes>
     </test>

@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="example suite 1" duration-ms="99801" started-at="2017-03-01T09:33:39Z" finished-at="2017-03-01T09:35:19Z">
+  <suite name="example suite 1" duration-ms="50738" started-at="2017-03-21T10:14:13Z" finished-at="2017-03-21T10:15:03Z">
     <groups>
     </groups>
-    <test name="LIL suite 1" duration-ms="99801" started-at="2017-03-01T09:33:39Z" finished-at="2017-03-01T09:35:19Z">
+    <test name="LIL suite 1" duration-ms="50738" started-at="2017-03-21T10:14:13Z" finished-at="2017-03-21T10:15:03Z">
+      <class name="testcase.DigitalBookWizardTestNG">
+        <test-method status="PASS" signature="listOfWizards()[pri:1, instance:testcase.DigitalBookWizardTestNG@1efbd816]" name="listOfWizards" duration-ms="3182" started-at="2017-03-21T15:44:59Z" finished-at="2017-03-21T15:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listOfWizards -->
+        <test-method status="PASS" signature="digitalBookWizrdOpen()[pri:2, instance:testcase.DigitalBookWizardTestNG@1efbd816]" name="digitalBookWizrdOpen" duration-ms="605" started-at="2017-03-21T15:45:03Z" finished-at="2017-03-21T15:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- digitalBookWizrdOpen -->
+      </class> <!-- testcase.DigitalBookWizardTestNG -->
       <class name="testcase.Login_Action">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.Login_Action@458ad742]" name="beforeClass" is-config="true" duration-ms="79306" started-at="2017-03-01T15:03:39Z" finished-at="2017-03-01T15:04:58Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcase.Login_Action@174d20a]" name="beforeClass" is-config="true" duration-ms="25226" started-at="2017-03-21T15:44:13Z" finished-at="2017-03-21T15:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="modal_open()[pri:1, instance:testcase.Login_Action@458ad742]" name="modal_open" duration-ms="618" started-at="2017-03-01T15:04:58Z" finished-at="2017-03-01T15:04:59Z">
+        <test-method status="PASS" signature="modal_open()[pri:1, instance:testcase.Login_Action@174d20a]" name="modal_open" duration-ms="511" started-at="2017-03-21T15:44:38Z" finished-at="2017-03-21T15:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modal_open -->
-        <test-method status="PASS" signature="enterCredentials(java.lang.String, java.lang.String)[pri:2, instance:testcase.Login_Action@458ad742]" name="enterCredentials" duration-ms="10925" started-at="2017-03-01T15:05:00Z" data-provider="credentials" finished-at="2017-03-01T15:05:11Z">
+        <test-method status="PASS" signature="enterCredentials(java.lang.String, java.lang.String)[pri:2, instance:testcase.Login_Action@174d20a]" name="enterCredentials" duration-ms="10962" started-at="2017-03-21T15:44:41Z" data-provider="credentials" finished-at="2017-03-21T15:44:52Z">
           <params>
             <param index="0">
               <value>
@@ -31,17 +41,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCredentials -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.Login_Action@458ad742]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-03-01T15:05:11Z" finished-at="2017-03-01T15:05:11Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testcase.Login_Action@174d20a]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-03-21T15:44:52Z" finished-at="2017-03-21T15:44:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testcase.Login_Action -->
       <class name="testcase.No_of_ProjectTestNG">
-        <test-method status="PASS" signature="clickUponProjectTab()[pri:1, instance:testcase.No_of_ProjectTestNG@5afa04c]" name="clickUponProjectTab" duration-ms="4168" started-at="2017-03-01T15:05:11Z" finished-at="2017-03-01T15:05:15Z">
+        <test-method status="PASS" signature="clickUponProjectTab()[pri:1, instance:testcase.No_of_ProjectTestNG@66d2e7d9]" name="clickUponProjectTab" duration-ms="3342" started-at="2017-03-21T15:44:52Z" finished-at="2017-03-21T15:44:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickUponProjectTab -->
-        <test-method status="PASS" signature="openProject()[pri:2, instance:testcase.No_of_ProjectTestNG@5afa04c]" name="openProject" duration-ms="3527" started-at="2017-03-01T15:05:15Z" finished-at="2017-03-01T15:05:19Z">
+        <test-method status="PASS" signature="openProject()[pri:2, instance:testcase.No_of_ProjectTestNG@66d2e7d9]" name="openProject" duration-ms="3832" started-at="2017-03-21T15:44:56Z" finished-at="2017-03-21T15:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openProject -->

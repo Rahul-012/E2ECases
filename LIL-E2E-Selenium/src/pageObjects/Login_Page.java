@@ -24,9 +24,9 @@ public class Login_Page extends TestBase{
 		 element= driver.findElement(By.className("modal-login"));	
 		 element.findElement(By.name("username")).sendKeys(user);
 	     element.findElement(By.name("password")).sendKeys(pass);
-	     element.findElement(By.className("btn-login")).click();
+	     element.findElement(By.className("btn-login-signup")).click();
 	      Thread.sleep(5000);
-	      Assert.assertEquals("http://securelearning.in/courses/recommended", "http://securelearning.in/courses/recommended");
+	      Assert.assertEquals("https://securelearning.in/courses/recommended", "https://securelearning.in/courses/recommended");
 		//return web;
 	}
 	public static void inValidCredentials()
