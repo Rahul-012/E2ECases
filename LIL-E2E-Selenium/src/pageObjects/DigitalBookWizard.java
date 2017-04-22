@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,6 +22,18 @@ public class DigitalBookWizard extends TestBase {
 	{
 		methods.clickUponWizard("/html/body/div[1]/div/ul/li/ul/li[1]/a/i");
 	}
+	
+	public void baseImage() throws IOException, InterruptedException
+	{
+		methods.baseImage();
+	}
+	public void bannerImage() throws IOException, InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		methods.bannerImage();
+	}
+	
 
 	
 

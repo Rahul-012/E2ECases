@@ -1,5 +1,9 @@
 package pageObjects;
 
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -137,15 +141,171 @@ public class WorkspaceMethods extends TestBase implements WizardInterface{
 	}
 
 	@Override
-	public void bannerImage() {
+	public void bannerImage() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
+		
+		driver.findElement(By.cssSelector("body > div.modal.fade.ng-scope.ng-isolate-scope.in > div > div > div.modal-body.lil-wizard.p-t-0.ng-scope > div > div > div.col-md-12.wizard-banner.padding-zero > div.bannerImage.add-image > label > i ")).click();
+	    Thread.sleep(3000);
+     	Boolean imagewizardappear=driver.findElement(By.className("modal-content")).isDisplayed();
+	    Boolean expected=true;
+        Assert.assertEquals(imagewizardappear, expected);
+        
+        //**************Upload Different files Format***************************
+        //upload docfile
+	     String expect="Selected resource type is not valid, only images are allowed.";
+
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(5000);
+	    
+	
+	     Runtime.getRuntime().exec("F:\\AutoIT\\docFIileUload.exe");
+	     Thread.sleep(2000);
+	     String actual =driver.findElement(By.className("error")).getText();
+	     Assert.assertEquals(actual, expect);
+	     Thread.sleep(8000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload WordFile--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //TextFile upload
+	     
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(5000);
+	     
+	     
+	  
+	     String textfileExpect="Selected resource type is not valid, only images are allowed.";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\textFileupload.exe");
+	     Thread.sleep(2000);
+	    
+	     String textFileActual=driver.findElement(By.className("error")).getText();
+	      Assert.assertEquals(textFileActual,textfileExpect);
+	      Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload TextFile--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //upload PFD File 
+	    
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(5000);
+	     
+	     String pdffileExpect="Selected resource type is not valid, only images are allowed.";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\pdfFileUpload.exe");
+	     Thread.sleep(2000);
+	    
+	     String pdfFileActual=driver.findElement(By.className("error")).getText();
+	     Assert.assertEquals(pdfFileActual,pdffileExpect);
+	     Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload PDFFile--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //mp3 File
+	     driver.findElement(By.className("fa-upload")).click();
+	     String mp3fileExpect="Selected resource type is not valid, only images are allowed.";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\mp3Fileupload.exe");
+	     Thread.sleep(2000);
+	    
+	     String mp3FileActual=driver.findElement(By.className("error")).getText();
+	     Assert.assertEquals(mp3FileActual,mp3fileExpect);
+	     Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload Mp3 File--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //Image File 
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(3000);
+	//     String ImagefileExpect="Resource uploaded successfully!!";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\Resourceupload.exe");
+	     Thread.sleep(5000);
+	    
+	 //    String ImageFileActual=driver.findElement(By.className("success")).getText();
+	  //   Assert.assertEquals(ImageFileActual,ImagefileExpect);
+	   //  Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<----------Image upload Successfully-->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
 		
 	}
 
 	@Override
-	public void baseImage() {
+	public void baseImage() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		
+		driver.findElement(By.cssSelector("body > div.modal.fade.ng-scope.ng-isolate-scope.in > div > div > div.modal-body.lil-wizard.p-t-0.ng-scope > div > div > div:nth-child(2) > div.col-md-4 > div > div > div > label > i")).click();
+	    Thread.sleep(3000);
+     	Boolean imagewizardappear=driver.findElement(By.className("modal-content")).isDisplayed();
+	    Boolean expected=true;
+        Assert.assertEquals(imagewizardappear, expected);
+        
+        //**************Upload Different files Format***************************
+        //upload docfile
+	     String expect="Selected resource type is not valid, only images are allowed.";
+
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(5000);
+	    
+	
+	     Runtime.getRuntime().exec("F:\\AutoIT\\docFIileUload.exe");
+	     Thread.sleep(2000);
+	     String actual =driver.findElement(By.className("error")).getText();
+	     Assert.assertEquals(actual, expect);
+	     Thread.sleep(8000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload WordFile--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //TextFile upload
+	     
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(5000);
+	     
+	     
+	  
+	     String textfileExpect="Selected resource type is not valid, only images are allowed.";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\textFileupload.exe");
+	     Thread.sleep(2000);
+	    
+	     String textFileActual=driver.findElement(By.className("error")).getText();
+	      Assert.assertEquals(textFileActual,textfileExpect);
+	      Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload TextFile--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //upload PFD File 
+	    
+	     driver.findElement(By.className("fa-upload")).click();
+	     Thread.sleep(5000);
+	     
+	     String pdffileExpect="Selected resource type is not valid, only images are allowed.";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\pdfFileUpload.exe");
+	     Thread.sleep(2000);
+	    
+	     String pdfFileActual=driver.findElement(By.className("error")).getText();
+	     Assert.assertEquals(pdfFileActual,pdffileExpect);
+	     Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload PDFFile--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //mp3 File
+	     driver.findElement(By.className("fa-upload")).click();
+	     String mp3fileExpect="Selected resource type is not valid, only images are allowed.";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\mp3Fileupload.exe");
+	     Thread.sleep(2000);
+	    
+	     String mp3FileActual=driver.findElement(By.className("error")).getText();
+	     Assert.assertEquals(mp3FileActual,mp3fileExpect);
+	     Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<-----------Unable to Upload Mp3 File--->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
+	     //Image File 
+	     driver.findElement(By.className("fa-upload")).click();
+	     String ImagefileExpect="Resource uploaded successfully!!";
+	     Runtime.getRuntime().exec("F:\\AutoIT\\Resourceupload.exe");
+	     Thread.sleep(2000);
+	    
+	     String ImageFileActual=driver.findElement(By.className("success")).getText();
+	     Assert.assertEquals(ImageFileActual,ImagefileExpect);
+	     Thread.sleep(7000);
+	     logger.info("<<<<<<<<<<<----------Image upload Successfully-->>>>>>>>>>>>>>>>>");
+	     Thread.sleep(5000);
+	     
 	}
 
 	

@@ -31,7 +31,7 @@ public class TestBase {
 			System.out.println("Not Avaliable");
 			break;
 		case "Chrome":
-			System.setProperty("webdriver.chrome.driver", "F:\\name\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "F:\\driver\\chromedriver.exe");
 			logger=Logger.getLogger("SampleEntry");
 			PropertyConfigurator.configure("log4j.properties");
 			

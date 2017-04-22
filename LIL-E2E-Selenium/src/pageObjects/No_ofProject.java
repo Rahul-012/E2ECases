@@ -11,6 +11,7 @@ public class No_ofProject extends TestBase {
 	
 	public static void openProjectTab() throws Exception
 	{
+		Thread.sleep(7000);
 		driver.findElement(By.linkText("Workspace")).click();
 		Thread.sleep(3000);
 	}

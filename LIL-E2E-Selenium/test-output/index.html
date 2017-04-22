@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-example_suite_1">
-              <span class="suite-name border-passed">example suite 1</span>
+              <span class="suite-name border-failed">example suite 1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-example_suite_1">
-                    <span>C:\Users\Moin Khan\.git\LIL-E2E-Selenium\Testing.xml</span>
+                    <span>F:\LIL-E2E-Selenium\E2ECases\LIL-E2E-Selenium\Testing.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-example_suite_1" class="hide-methods failed suite-example_suite_1"> (hide)</a> <!-- hide-methods failed suite-example_suite_1 -->
+                      <a href="#" panel-name="suite-example_suite_1" class="show-methods failed suite-example_suite_1"> (show)</a> <!-- show-methods failed suite-example_suite_1 -->
+                    </span>
+                    <div class="method-list-content failed suite-example_suite_1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="testcase.DigitalBookWizardTestNG" hash-for-method="uploadBannerImage">uploadBannerImage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="testcase.DigitalBookWizardTestNG" hash-for-method="uploadBaseImage">uploadBaseImage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-example_suite_1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,6 +160,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-example_suite_1" class="panel example_suite_1">
+          <div class="suite-example_suite_1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcase.DigitalBookWizardTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadBannerImage">
+                  </a> <!-- uploadBannerImage -->
+                  <span class="method-name">uploadBannerImage</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;i class=&quot;fa fa-picture-o&quot;&gt;&lt;/i&gt; is not clickable at point (1097, 90). Other element would receive the click: &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 114 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;LAPTOP-UQLHQIUB&apos;, ip: &apos;192.124.120.112&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Rahul\AppData\Local\Temp\scoped_dir8908_11214}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 49ed2fd52180c3c7873ff7f1f1d1d922
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at pageObjects.WorkspaceMethods.bannerImage(WorkspaceMethods.java:147)
+	at pageObjects.DigitalBookWizard.bannerImage(DigitalBookWizard.java:34)
+	at testcase.DigitalBookWizardTestNG.uploadBannerImage(DigitalBookWizardTestNG.java:32)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadBaseImage">
+                  </a> <!-- uploadBaseImage -->
+                  <span class="method-name">uploadBaseImage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;success&quot;}
+  (Session info: chrome=57.0.2987.133)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 67 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;LAPTOP-UQLHQIUB&apos;, ip: &apos;192.124.120.112&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Rahul\AppData\Local\Temp\scoped_dir8908_11214}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=57.0.2987.133, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 49ed2fd52180c3c7873ff7f1f1d1d922
+*** Element info: {Using=class name, value=success}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:477)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at pageObjects.WorkspaceMethods.baseImage(WorkspaceMethods.java:303)
+	at pageObjects.DigitalBookWizard.baseImage(DigitalBookWizard.java:28)
+	at testcase.DigitalBookWizardTestNG.uploadBaseImage(DigitalBookWizardTestNG.java:26)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-example_suite_1-class-failed -->
           <div class="suite-example_suite_1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -211,7 +294,7 @@
         </div> <!-- panel example_suite_1 -->
         <div panel-name="test-xml-example_suite_1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Moin Khan\.git\LIL-E2E-Selenium\Testing.xml</span>
+            <span class="header-content">F:\LIL-E2E-Selenium\E2ECases\LIL-E2E-Selenium\Testing.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -262,36 +345,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'enterCredentials')
-data.setCell(0, 2, 'testcase.Login_Action')
-data.setCell(0, 3, 10962);
+data.setCell(0, 1, 'uploadBaseImage')
+data.setCell(0, 2, 'testcase.DigitalBookWizardTestNG')
+data.setCell(0, 3, 78497);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openProject')
+data.setCell(1, 1, 'clickUponProjectTab')
 data.setCell(1, 2, 'testcase.No_of_ProjectTestNG')
-data.setCell(1, 3, 3832);
+data.setCell(1, 3, 13849);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickUponProjectTab')
-data.setCell(2, 2, 'testcase.No_of_ProjectTestNG')
-data.setCell(2, 3, 3342);
+data.setCell(2, 1, 'enterCredentials')
+data.setCell(2, 2, 'testcase.Login_Action')
+data.setCell(2, 3, 12384);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'listOfWizards')
-data.setCell(3, 2, 'testcase.DigitalBookWizardTestNG')
-data.setCell(3, 3, 3182);
+data.setCell(3, 1, 'openProject')
+data.setCell(3, 2, 'testcase.No_of_ProjectTestNG')
+data.setCell(3, 3, 3710);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'digitalBookWizrdOpen')
+data.setCell(4, 1, 'uploadBannerImage')
 data.setCell(4, 2, 'testcase.DigitalBookWizardTestNG')
-data.setCell(4, 3, 605);
+data.setCell(4, 3, 3208);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'modal_open')
-data.setCell(5, 2, 'testcase.Login_Action')
-data.setCell(5, 3, 511);
+data.setCell(5, 1, 'listOfWizards')
+data.setCell(5, 2, 'testcase.DigitalBookWizardTestNG')
+data.setCell(5, 3, 3133);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'digitalBookWizrdOpen')
+data.setCell(6, 2, 'testcase.DigitalBookWizardTestNG')
+data.setCell(6, 3, 726);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'modal_open')
+data.setCell(7, 2, 'testcase.Login_Action')
+data.setCell(7, 3, 607);
 window.suiteTableData['example_suite_1']= { tableData: data, tableDiv: 'times-div-example_suite_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-example_suite_1">
               </div> <!-- times-div-example_suite_1 -->
             </div> <!-- times-div -->
@@ -324,37 +415,49 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">modal_open</span>
-                <span class="method-start">25414 ms</span>
+                <span class="method-start">41559 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enterCredentials(rahulrathore010@gmail.com, rahul)</span>
-                <span class="method-start">28770 ms</span>
+                <span class="method-start">43405 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">39736 ms</span>
+                <span class="method-start">55792 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.No_of_ProjectTestNG</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">clickUponProjectTab</span>
-                <span class="method-start">39740 ms</span>
+                <span class="method-start">55796 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openProject</span>
-                <span class="method-start">43085 ms</span>
+                <span class="method-start">69652 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcase.DigitalBookWizardTestNG</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">listOfWizards</span>
-                <span class="method-start">46923 ms</span>
+                <span class="method-start">73366 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">digitalBookWizrdOpen</span>
-                <span class="method-start">50108 ms</span>
+                <span class="method-start">76506 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadBaseImage</span>
+                <span class="method-start">77237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadBannerImage</span>
+                <span class="method-start">155758 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

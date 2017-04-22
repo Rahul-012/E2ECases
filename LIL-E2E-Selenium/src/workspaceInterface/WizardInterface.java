@@ -1,5 +1,7 @@
 package workspaceInterface;
 
+import java.io.IOException;
+
 public interface WizardInterface {
       
 	 public void listOfWizard();
@@ -10,8 +12,8 @@ public interface WizardInterface {
      public void duration();
      public void audienceTargetTo();
      public void googleSearch();
-     public void bannerImage();
-     public void baseImage();
+     public void bannerImage() throws IOException, InterruptedException;
+     public void baseImage() throws IOException, InterruptedException;
     
     
 }

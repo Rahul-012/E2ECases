@@ -3,10 +3,13 @@ package ReadExcel;
 import java.io.FileInputStream;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import bsh.Parser;
 
 
 
@@ -35,6 +38,7 @@ public class Read_XLS {
 	{
 		int index;
 		int col_Num=0;
+		String number;
 		try
 		{
 			 index=wrkbook.getSheetIndex(sheetname);
@@ -50,12 +54,18 @@ public class Read_XLS {
 			  }
 			 row= sheet.getRow(rowNum-1);
 			 cell= row.getCell(col_Num);
+			 
 			 if(cell.getCellType()==Cell.CELL_TYPE_STRING)
 			 {
 				 return cell.getStringCellValue();
 			 }
-			 else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
-				 return cell.getStringCellValue();
+			 else if(cell.getCellType()==Cell.CELL_TYPE_NUMERIC)
+			 
+				  return String.valueOf(cell.getNumericCellValue());
+			 
+			 /*else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
+				 return cell.getStringCellValue();*/
+			 
 			 else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
 				 return "";
 		}
@@ -84,6 +94,7 @@ public class Read_XLS {
 			 }
 			 else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
 				 return cell.getStringCellValue();
+		
 			 else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
 				 return "";
 		}
