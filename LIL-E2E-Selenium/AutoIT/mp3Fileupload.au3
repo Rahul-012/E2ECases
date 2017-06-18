@@ -1,0 +1,3 @@
+ControlFocus("Open","","Edit1")
+ControlSetText("Open","","Edit1","F:\AutoIT\Resourceupload\zindagi.mp3")
+ControlClick("Open","","Button1")
